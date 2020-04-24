@@ -1,0 +1,55 @@
+---------------------------------------------------------------------
+BD Software STL Message Decryptor v3.10 for gcc 2/3/4
+---------------------------------------------------------------------
+Command line: ''
+banner = Y
+break_algorithm = D
+comma_wrap = B
+close_wrap = Y
+output_width = 80
+tabsize = 4
+advise_re_policy_opts = 1
+reformat_linenumbers = 0
+wrap_own_msgs = 0
+header_policy = L
+with_policy = S
+headers_to_show = 1
+candidate_policy = L
+pathname_policy = S
+show_backtraces = Y
+---------------------------------------------------------------------
+Native input follows:
+---------------------------------------------------------------------
+
+Raw unprocessed input line:
+    if (i >'0' and i <= '9'){
+
+
+
+The line at the point of the error was:
+if (i>'0' and i <= '9'){
+
+     ^
+
+Nesting key: 0 0 0 1 1
+
+STL Decryptor ERROR: the char '>' (position 5) DOESN'T MATCH DELIMITER '('!
+                            ^
+main.cc: At global scope:
+main.cc:62:4: error: ‘game’ does not name a type; did you mean ‘Game’?
+    game.tie();
+    ^~~~
+    Game
+main.cc:63:4: error: ‘game’ does not name a type; did you mean ‘Game’?
+    game.pause();
+    ^~~~
+    Game
+main.cc:65:12: error: expected constructor, destructor, or type conversion before ‘;’ token
+    endwin();
+            ^
+main.cc:66:4: error: expected unqualified-id before ‘return’
+    return 0;
+    ^~~~~~
+main.cc:67:1: error: expected declaration before ‘}’ token
+ }
+ ^

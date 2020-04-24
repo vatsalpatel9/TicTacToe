@@ -1,0 +1,46 @@
+BD Software STL Message Decryptor v3.10 for gcc 2/3/4
+
+game.h:46:20:   required from here
+In file included from vector:64,
+from game.h:21,
+from main.cc:17:
+stl_vector.h: In instantiation of ‘vector<
+        char []; _Alloc = allocator<char []>; vector<_Tp, _Alloc>::reference =
+        char (&)[]; vector<_Tp, _Alloc>::size_type = long unsigned int, _Alloc>
+    ::reference vector<
+        char []; _Alloc = allocator<char []>; vector<_Tp, _Alloc>::reference =
+        char (&)[]; vector<_Tp, _Alloc>::size_type = long unsigned int, _Alloc>
+    ::operator[](
+        vector<
+            char []; _Alloc = allocator<char []>; vector<_Tp, _Alloc>
+            ::reference = char (&)[]; vector<_Tp, _Alloc>::size_type = long
+            unsigned int, _Alloc>::size_type)’
+
+stl_vector.h:933:34: error: invalid use of array with unspecified bounds
+return *(this->_M_impl._M_start + __n);
+~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+stl_vector.h: In instantiation of ‘_Vector_base<
+        char []; _Alloc = allocator<char []>, _Alloc>::~_Vector_base()’:
+stl_vector.h:395:15:   required from ‘vector<
+        char []; _Alloc = allocator<char []>, _Alloc>::vector()’
+game.h:25:7:   required from here
+stl_vector.h:286:35: error: invalid use of array with unspecified bounds
+_M_impl._M_end_of_storage - _M_impl._M_start);
+~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+
+stl_construct.h:206:15:   required from ‘void _Destroy(
+        char (*)[]; _Tp = char [], char (*)[]; _Tp = char []&)’
+In file included from vector:62,
+from game.h:21,
+from main.cc:17:
+stl_construct.h: In instantiation of ‘void _Destroy(char (*)[], char
+        (*)[])’
+
+stl_vector.h:567:15:   required from ‘vector<
+        char []; _Alloc = allocator<char []>, _Alloc>::~vector()’
+game.h:25:7:   required from here
+stl_construct.h:133:21: error: static assertion failed: value type is
+    destructible
+static_assert(
+        is_destructible<_Value_type>::value,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~
