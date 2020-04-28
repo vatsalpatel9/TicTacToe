@@ -1,5 +1,5 @@
 /* 
-   run.cc  -- Program to  get input from user and call functions to complete actions
+   run.cpp  -- Program to  get input from user and call functions to complete actions
 
    Author: Vatsal Patel
 
