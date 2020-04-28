@@ -9,13 +9,15 @@
 
    ID code: 5ARc4N3ihjpc.
 */
-using namespace std;
+
 #include <iostream>
 #include <iomanip>
 #include <string>
 #include <ncurses.h>
 #include "game.h"
 #include "ReadInput.h"
+
+using namespace std;
 
 int main()
 {
