@@ -5,9 +5,7 @@
 
    Modification History
    Date        Action
-   12/5/18  -- Original version
-
-   ID code: 5ARc4N3ihjpc.
+   04/27/2020  -- Original version
 */
 
 #include <iostream>
